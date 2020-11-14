@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    min-height: 100px;
+}
+
+.nav-item a:hover{
+    background: #3282b8;
+    color: #fff;
+}
+
+.nav-link { color:black; border-radius: 24px;}
+.nav-link:hover{ color:black;}
+.navbar-brand{ color: #000000;}
+.navbar-toggler{ font-size: 40px;}
+.navbar-toggler:focus{ outline: none;}
+
+.card-footer .btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+}
+
+.form-group h1{
+    font-size:19px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}´
+
+#pagarPlan .modal-dialog {
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    top: 50%;
+    margin: 0 auto;
+}

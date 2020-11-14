@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post"> {% csrf_token %}
+        {{ form.as_p }}
+      <p>hola</p>
+      <button type="submit" class="save btn btn-primary">Guardar</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </form>
+
+
+
+    <div class="modal fade" id="pagarPlan" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="post">
+              <h5 class="modal-title" id="exampleModalLabel">Pagar {{ plan.NombrePlan }} </h5> </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" >
+              <h6>Total a Pagar: </h6>
+              <hr>
+              <h6>Selecciona la forma de pago: </h6>
+              <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-2">
+                  <div class="col mb-1">
+                    <p><input type="image" name="botondeenvio" src="{% static 'img/webpay.jpg' %}" alt="..." class="card-img-top" data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+                  </div>
+                  <div class="col mb-1">
+                    <p><input type="image" name="botondeenvio" src="{% static 'img/redcompra.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+                  </div>
+                  <div class="col mb-1">
+                    <p><input type="image" name="botondeenvio" src="{% static 'img/servipag.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+                  </div>
+                  <div class="col mb-1">
+                    <p><input type="image" name="botondeenvio" src="{% static 'img/santander.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+                  </div>
+                  <div class="col mb-1  ">
+                    <p><input type="image" name="botondeenvio" src="{% static 'img/bancoestado.jpg' %}" class="card-img-top" alt="..." data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+                  </div>                
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="post    " >
+        <h6>Total a Pagar: {{ plan.precio }} </h6>
+        <hr>
+        <h6>Selecciona la forma de pago: </h6>
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-1">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/webpay.jpg' %}" alt="..." class="card-img-top" data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>
+            <div class="col mb-1">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/redcompra.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>
+            <div class="col mb-1">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/servipag.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>
+            <div class="col mb-1">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/santander.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>
+            <div class="col mb-1  ">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/bancoestado.jpg' %}" class="card-img-top" alt="..." data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>                
+          </div>
+        </div>
+      </div>
+</body>
+</html>
