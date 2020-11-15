@@ -23,7 +23,30 @@
         </div>
     </div>
     <div class="col mb-1">
-
+      <div class="    " >
+        <h6>Total a Pagar: {{ plan.precio }} </h6>
+        <hr>
+        <h6>Selecciona la forma de pago: </h6>
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-1">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/webpay.jpg' %}" alt="..." class="card-img-top" data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>
+            <div class="col mb-1">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/redcompra.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>
+            <div class="col mb-1">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/servipag.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>
+            <div class="col mb-1">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/santander.jpg' %}" class="card-img-top" alt="..."data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>
+            <div class="col mb-1  ">
+              <p><input type="image" name="botondeenvio" src="{% static 'img/bancoestado.jpg' %}" class="card-img-top" alt="..." data-toggle="modal" data-target="#confirmarPago" data-dismiss="modal"></p>
+            </div>                
+          </div>
+        </div>
+      </div>
     </div>
 </div>
 
