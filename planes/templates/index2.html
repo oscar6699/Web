@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+  
+{% block content %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+    <div class="img-header">
+        <div class="welcome">
+            <h1>Bienvenidos a BikeRent</h1>
+            <hr>
+            <p>Renta de bicicletas por todo Santiago</p>
+            <button id="abajo" role="link" onclick="window.location='nosotros.html'">Ver Mas</button>
+        </div>
+    </div>
+{% endblock %}

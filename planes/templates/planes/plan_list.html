@@ -1,7 +1,9 @@
-{% extends 'planes/base.html' %}
+{% extends 'base.html' %}
+{% load static ("planes.css") %]
 {% load static %}
 
 {% block content %}
+<link href="{% static 'css/planes.css' %}" rel="stylesheet">
 <div class="row row-cols-1 row-cols-md-3">
   {% for plan in planes %}
   <div class="col mb-3">
