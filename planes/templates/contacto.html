@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+  <link href="{% static 'css/contacto.css' %}" rel="stylesheet">
+      <hr>
+      <form action="" method="post">
+          <h2>Contactanos</h2>
+          <div class="form-group mb-3">
+            <label class="font-weight-bold">Nombre <span class="text-danger"></span></label>
+            <input type="text" class="form-control" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group mb-3">
+            <label class="font-weight-bold">Correo <span class="text-danger"></span></label>
+            <input type="text" class="form-control" placeholder="Ingrese su correo">
+        </div>
+        <div class="form-group mb-3">
+            <label class="font-weight-bold">Telefono <span class="text-danger"></span></label>
+            <input type="text" class="form-control" placeholder="Ingrese su Telefono">
+        </div>
+        <div class="form-group mb-3">
+            <label class="font-weight-bold">Escribe tu mensaje <span class="text-danger"></span></label>
+            <textarea name="Mensaje"  placeholder="Ingrese su mensaje"></textarea>
+        </div>
+        
+          
+          <input type="button" value="Enviar" id="boton">
+      </form>
+
+
+      {% endblock %}
+

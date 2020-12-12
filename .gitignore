@@ -1,0 +1,11 @@
+# No subir carpeta git de librerias
+
+entorno/
+
+#Archovos punto pip
+
+.pip
+
+#Cache
+
+_pycache_
